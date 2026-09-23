@@ -1,0 +1,493 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A10000000000000000000001 /* EyedropTranslateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000001 /* EyedropTranslateApp.swift */; };
+		A10000000000000000000002 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000002 /* AppDelegate.swift */; };
+		A10000000000000000000003 /* MenuBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000003 /* MenuBarController.swift */; };
+		A10000000000000000000004 /* OverlayPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000004 /* OverlayPanel.swift */; };
+		A10000000000000000000005 /* OverlayContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000005 /* OverlayContentView.swift */; };
+		A10000000000000000000006 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000006 /* SettingsView.swift */; };
+		A10000000000000000000007 /* SettingsWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000007 /* SettingsWindowController.swift */; };
+		A10000000000000000000008 /* AccessibilityPermission.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000008 /* AccessibilityPermission.swift */; };
+		A10000000000000000000009 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000009 /* Constants.swift */; };
+		A1000000000000000000000A /* PlaceholderStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000000000000000000000A /* PlaceholderStrings.swift */; };
+		A10000000000000000000011 /* TranslateCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000011 /* TranslateCoordinator.swift */; };
+		A10000000000000000000012 /* SelectionReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000012 /* SelectionReader.swift */; };
+		A10000000000000000000013 /* TranslationModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000013 /* TranslationModels.swift */; };
+		A10000000000000000000014 /* TranslationCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000014 /* TranslationCache.swift */; };
+		A10000000000000000000015 /* TranslateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000015 /* TranslateService.swift */; };
+		A10000000000000000000016 /* MockTranslateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000016 /* MockTranslateService.swift */; };
+		A10000000000000000000017 /* URLSessionTranslateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000017 /* URLSessionTranslateService.swift */; };
+		A1000000000000000000001E /* MyMemoryTranslateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000000000000000000001E /* MyMemoryTranslateService.swift */; };
+		A1000000000000000000001F /* LingvaTranslateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000000000000000000001F /* LingvaTranslateService.swift */; };
+		A10000000000000000000026 /* GoogleTranslateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000026 /* GoogleTranslateService.swift */; };
+		A10000000000000000000018 /* OverlayState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000018 /* OverlayState.swift */; };
+		A10000000000000000000019 /* HotkeyStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000019 /* HotkeyStub.swift */; };
+		A1000000000000000000001A /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000000000000000000001A /* AppTheme.swift */; };
+		A1000000000000000000001C /* SelectionAutoMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000000000000000000001C /* SelectionAutoMonitor.swift */; };
+		A1000000000000000000001D /* AppPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000000000000000000001D /* AppPreferences.swift */; };
+		A1000000000000000000001B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1000000000000000000001B /* Assets.xcassets */; };
+		A10000000000000000000020 /* WordbookEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000020 /* WordbookEntry.swift */; };
+		A10000000000000000000021 /* WordbookStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000021 /* WordbookStore.swift */; };
+		A10000000000000000000022 /* WordbookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000022 /* WordbookView.swift */; };
+		A10000000000000000000023 /* WordbookWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000023 /* WordbookWindowController.swift */; };
+		A10000000000000000000024 /* DesktopFloatingBall.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000024 /* DesktopFloatingBall.swift */; };
+		A10000000000000000000025 /* DesktopWidgetStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000025 /* DesktopWidgetStub.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B10000000000000000000001 /* EyedropTranslateApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EyedropTranslateApp.swift; sourceTree = "<group>"; };
+		B10000000000000000000002 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B10000000000000000000003 /* MenuBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarController.swift; sourceTree = "<group>"; };
+		B10000000000000000000004 /* OverlayPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayPanel.swift; sourceTree = "<group>"; };
+		B10000000000000000000005 /* OverlayContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayContentView.swift; sourceTree = "<group>"; };
+		B10000000000000000000006 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		B10000000000000000000007 /* SettingsWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsWindowController.swift; sourceTree = "<group>"; };
+		B10000000000000000000008 /* AccessibilityPermission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityPermission.swift; sourceTree = "<group>"; };
+		B10000000000000000000009 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		B1000000000000000000000A /* PlaceholderStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderStrings.swift; sourceTree = "<group>"; };
+		B1000000000000000000000B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1000000000000000000000C /* EyedropTranslate.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EyedropTranslate.entitlements; sourceTree = "<group>"; };
+		B1000000000000000000000D /* eDrop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = eDrop.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1000000000000000000000E /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		B1000000000000000000000F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		B10000000000000000000010 /* ARCHITECTURE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = ARCHITECTURE.md; sourceTree = "<group>"; };
+		B10000000000000000000011 /* TranslateCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateCoordinator.swift; sourceTree = "<group>"; };
+		B10000000000000000000012 /* SelectionReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionReader.swift; sourceTree = "<group>"; };
+		B10000000000000000000013 /* TranslationModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationModels.swift; sourceTree = "<group>"; };
+		B10000000000000000000014 /* TranslationCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationCache.swift; sourceTree = "<group>"; };
+		B10000000000000000000015 /* TranslateService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateService.swift; sourceTree = "<group>"; };
+		B10000000000000000000016 /* MockTranslateService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockTranslateService.swift; sourceTree = "<group>"; };
+		B10000000000000000000017 /* URLSessionTranslateService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionTranslateService.swift; sourceTree = "<group>"; };
+		B1000000000000000000001E /* MyMemoryTranslateService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMemoryTranslateService.swift; sourceTree = "<group>"; };
+		B1000000000000000000001F /* LingvaTranslateService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LingvaTranslateService.swift; sourceTree = "<group>"; };
+		B10000000000000000000026 /* GoogleTranslateService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleTranslateService.swift; sourceTree = "<group>"; };
+		B10000000000000000000018 /* OverlayState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayState.swift; sourceTree = "<group>"; };
+		B10000000000000000000019 /* HotkeyStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotkeyStub.swift; sourceTree = "<group>"; };
+		B1000000000000000000001A /* AppTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTheme.swift; sourceTree = "<group>"; };
+		B1000000000000000000001B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B1000000000000000000001C /* SelectionAutoMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionAutoMonitor.swift; sourceTree = "<group>"; };
+		B1000000000000000000001D /* AppPreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppPreferences.swift; sourceTree = "<group>"; };
+		B10000000000000000000020 /* WordbookEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordbookEntry.swift; sourceTree = "<group>"; };
+		B10000000000000000000021 /* WordbookStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordbookStore.swift; sourceTree = "<group>"; };
+		B10000000000000000000022 /* WordbookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordbookView.swift; sourceTree = "<group>"; };
+		B10000000000000000000023 /* WordbookWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordbookWindowController.swift; sourceTree = "<group>"; };
+		B10000000000000000000024 /* DesktopFloatingBall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesktopFloatingBall.swift; sourceTree = "<group>"; };
+		B10000000000000000000025 /* DesktopWidgetStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesktopWidgetStub.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C10000000000000000000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D10000000000000000000001 = {
+			isa = PBXGroup;
+			children = (
+				B1000000000000000000000F /* README.md */,
+				B10000000000000000000010 /* ARCHITECTURE.md */,
+				B1000000000000000000000E /* Package.swift */,
+				D10000000000000000000002 /* Sources */,
+				D10000000000000000000008 /* Resources */,
+				D10000000000000000000009 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D10000000000000000000002 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				D10000000000000000000003 /* EyedropTranslate */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		D10000000000000000000003 /* EyedropTranslate */ = {
+			isa = PBXGroup;
+			children = (
+				D10000000000000000000004 /* App */,
+				D10000000000000000000005 /* Features */,
+				D10000000000000000000007 /* Shared */,
+			);
+			path = EyedropTranslate;
+			sourceTree = "<group>";
+		};
+		D10000000000000000000004 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				B10000000000000000000001 /* EyedropTranslateApp.swift */,
+				B10000000000000000000002 /* AppDelegate.swift */,
+				B10000000000000000000003 /* MenuBarController.swift */,
+				B10000000000000000000011 /* TranslateCoordinator.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		D10000000000000000000005 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				D1000000000000000000000A /* Overlay */,
+				D1000000000000000000000B /* Settings */,
+				D1000000000000000000000C /* Accessibility */,
+				D1000000000000000000000D /* Selection */,
+				D1000000000000000000000E /* Translate */,
+				D1000000000000000000000F /* Hotkey */,
+				D10000000000000000000010 /* Wordbook */,
+				D10000000000000000000011 /* Widget */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		D1000000000000000000000A /* Overlay */ = {
+			isa = PBXGroup;
+			children = (
+				B10000000000000000000004 /* OverlayPanel.swift */,
+				B10000000000000000000005 /* OverlayContentView.swift */,
+				B10000000000000000000018 /* OverlayState.swift */,
+			);
+			path = Overlay;
+			sourceTree = "<group>";
+		};
+		D1000000000000000000000B /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				B10000000000000000000006 /* SettingsView.swift */,
+				B10000000000000000000007 /* SettingsWindowController.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		D1000000000000000000000C /* Accessibility */ = {
+			isa = PBXGroup;
+			children = (
+				B10000000000000000000008 /* AccessibilityPermission.swift */,
+			);
+			path = Accessibility;
+			sourceTree = "<group>";
+		};
+		D1000000000000000000000D /* Selection */ = {
+			isa = PBXGroup;
+			children = (
+				B10000000000000000000012 /* SelectionReader.swift */,
+				B1000000000000000000001C /* SelectionAutoMonitor.swift */,
+			);
+			path = Selection;
+			sourceTree = "<group>";
+		};
+		D1000000000000000000000E /* Translate */ = {
+			isa = PBXGroup;
+			children = (
+				B10000000000000000000013 /* TranslationModels.swift */,
+				B10000000000000000000014 /* TranslationCache.swift */,
+				B10000000000000000000015 /* TranslateService.swift */,
+				B10000000000000000000016 /* MockTranslateService.swift */,
+				B10000000000000000000017 /* URLSessionTranslateService.swift */,
+				B1000000000000000000001E /* MyMemoryTranslateService.swift */,
+				B10000000000000000000026 /* GoogleTranslateService.swift */,
+				B1000000000000000000001F /* LingvaTranslateService.swift */,
+			);
+			path = Translate;
+			sourceTree = "<group>";
+		};
+		D1000000000000000000000F /* Hotkey */ = {
+			isa = PBXGroup;
+			children = (
+				B10000000000000000000019 /* HotkeyStub.swift */,
+			);
+			path = Hotkey;
+			sourceTree = "<group>";
+		};
+		D10000000000000000000007 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				B10000000000000000000009 /* Constants.swift */,
+				B1000000000000000000000A /* PlaceholderStrings.swift */,
+				B1000000000000000000001A /* AppTheme.swift */,
+				B1000000000000000000001D /* AppPreferences.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		D10000000000000000000008 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B1000000000000000000000B /* Info.plist */,
+				B1000000000000000000000C /* EyedropTranslate.entitlements */,
+				B1000000000000000000001B /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D10000000000000000000009 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B1000000000000000000000D /* eDrop.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D10000000000000000000010 /* Wordbook */ = {
+			isa = PBXGroup;
+			children = (
+				B10000000000000000000020 /* WordbookEntry.swift */,
+				B10000000000000000000021 /* WordbookStore.swift */,
+				B10000000000000000000022 /* WordbookView.swift */,
+				B10000000000000000000023 /* WordbookWindowController.swift */,
+			);
+			path = Wordbook;
+			sourceTree = "<group>";
+		};
+		D10000000000000000000011 /* Widget */ = {
+			isa = PBXGroup;
+			children = (
+				B10000000000000000000024 /* DesktopFloatingBall.swift */,
+				B10000000000000000000025 /* DesktopWidgetStub.swift */,
+			);
+			path = Widget;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E10000000000000000000001 /* EyedropTranslate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F10000000000000000000003 /* Build configuration list for PBXNativeTarget "EyedropTranslate" */;
+			buildPhases = (
+				E10000000000000000000002 /* Sources */,
+				C10000000000000000000001 /* Frameworks */,
+				E10000000000000000000003 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EyedropTranslate;
+			productName = eDrop;
+			productReference = B1000000000000000000000D /* eDrop.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E10000000000000000000010 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					E10000000000000000000001 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = F10000000000000000000001 /* Build configuration list for PBXProject "eDrop" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = "zh-Hans";
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				"zh-Hans",
+				Base,
+			);
+			mainGroup = D10000000000000000000001;
+			productRefGroup = D10000000000000000000009 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E10000000000000000000001 /* EyedropTranslate */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E10000000000000000000003 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1000000000000000000001B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E10000000000000000000002 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10000000000000000000001 /* EyedropTranslateApp.swift in Sources */,
+				A10000000000000000000002 /* AppDelegate.swift in Sources */,
+				A10000000000000000000003 /* MenuBarController.swift in Sources */,
+				A10000000000000000000011 /* TranslateCoordinator.swift in Sources */,
+				A10000000000000000000004 /* OverlayPanel.swift in Sources */,
+				A10000000000000000000005 /* OverlayContentView.swift in Sources */,
+				A10000000000000000000018 /* OverlayState.swift in Sources */,
+				A10000000000000000000006 /* SettingsView.swift in Sources */,
+				A10000000000000000000007 /* SettingsWindowController.swift in Sources */,
+				A10000000000000000000008 /* AccessibilityPermission.swift in Sources */,
+				A10000000000000000000012 /* SelectionReader.swift in Sources */,
+				A10000000000000000000013 /* TranslationModels.swift in Sources */,
+				A10000000000000000000014 /* TranslationCache.swift in Sources */,
+				A10000000000000000000015 /* TranslateService.swift in Sources */,
+				A10000000000000000000016 /* MockTranslateService.swift in Sources */,
+				A10000000000000000000017 /* URLSessionTranslateService.swift in Sources */,
+				A1000000000000000000001E /* MyMemoryTranslateService.swift in Sources */,
+				A10000000000000000000026 /* GoogleTranslateService.swift in Sources */,
+				A1000000000000000000001F /* LingvaTranslateService.swift in Sources */,
+				A10000000000000000000019 /* HotkeyStub.swift in Sources */,
+				A10000000000000000000009 /* Constants.swift in Sources */,
+				A1000000000000000000000A /* PlaceholderStrings.swift in Sources */,
+				A1000000000000000000001A /* AppTheme.swift in Sources */,
+				A1000000000000000000001C /* SelectionAutoMonitor.swift in Sources */,
+				A1000000000000000000001D /* AppPreferences.swift in Sources */,
+				A10000000000000000000020 /* WordbookEntry.swift in Sources */,
+				A10000000000000000000021 /* WordbookStore.swift in Sources */,
+				A10000000000000000000022 /* WordbookView.swift in Sources */,
+				A10000000000000000000023 /* WordbookWindowController.swift in Sources */,
+				A10000000000000000000024 /* DesktopFloatingBall.swift in Sources */,
+				A10000000000000000000025 /* DesktopWidgetStub.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F10000000000000000000011 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		F10000000000000000000012 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		F10000000000000000000021 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Resources/EyedropTranslate.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				CODE_SIGNING_ALLOWED = YES;
+				CODE_SIGNING_REQUIRED = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 26;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = NO;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Resources/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "点译";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2026 王振茹 (Zhenru Wang). All rights reserved.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 0.3.17;
+				PRODUCT_BUNDLE_IDENTIFIER = app.eyedrop.translate;
+				PRODUCT_NAME = eDrop;
+				SDKROOT = macosx;
+				SKIP_INSTALL = NO;
+				SUPPORTED_PLATFORMS = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		F10000000000000000000022 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Resources/EyedropTranslate.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				CODE_SIGNING_ALLOWED = YES;
+				CODE_SIGNING_REQUIRED = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 26;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = NO;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Resources/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "点译";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2026 王振茹 (Zhenru Wang). All rights reserved.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 0.3.17;
+				PRODUCT_BUNDLE_IDENTIFIER = app.eyedrop.translate;
+				PRODUCT_NAME = eDrop;
+				SDKROOT = macosx;
+				SKIP_INSTALL = NO;
+				SUPPORTED_PLATFORMS = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F10000000000000000000001 /* Build configuration list for PBXProject "eDrop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F10000000000000000000011 /* Debug */,
+				F10000000000000000000012 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F10000000000000000000003 /* Build configuration list for PBXNativeTarget "EyedropTranslate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F10000000000000000000021 /* Debug */,
+				F10000000000000000000022 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E10000000000000000000010 /* Project object */;
+}

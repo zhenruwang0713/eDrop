@@ -1,0 +1,17 @@
+{
+  "images": [
+    {
+      "filename": "FloatingBallIcon.pdf",
+      "idiom": "universal"
+    }
+  ],
+  "info": {
+    "author": "xcode",
+    "version": 1,
+    "comment": "悬浮球专用矢量 e（PDF）。MenuBarIcon 仅 16/32，放大必糊。"
+  },
+  "properties": {
+    "preserves-vector-representation": true,
+    "template-rendering-intent": "template"
+  }
+}
