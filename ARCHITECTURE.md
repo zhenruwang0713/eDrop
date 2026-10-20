@@ -67,6 +67,6 @@ TranslateServiceFactory.make
 ## 5. 权限与分发
 
 - TCC 辅助功能：划词与全局鼠标监视前提；失败可见。
-- 沙盒关闭；`network.client` entitlements；Ad-hoc 且 `CODE_SIGNING_REQUIRED=YES` 以确保嵌入。
+- 沙盒关闭；`network.client` entitlements；工程内 Debug/Release 仍为 Ad-hoc（`CODE_SIGN_IDENTITY="-"`，`DEVELOPMENT_TEAM` 为空）且 `CODE_SIGNING_REQUIRED=YES`，以便本机 ⌘R。Developer ID 签名、公证与 `.dmg` 由 `scripts/build-signed-dmg.sh` 在命令行覆盖签名设置完成，不改这份工程的默认签名。
 - 出站 HTTPS（MyMemory / Google clients5 / Lingva）；ATS 默认即可。勿硬编码付费 API Key。
 - Linux 环境无法链接 AppKit；本仓库以源码 + 文档 + tar 交付，真机 Mac ⌘R。

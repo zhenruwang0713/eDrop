@@ -33,7 +33,8 @@ macOS 菜单栏阅读辅助：在任意应用中划选英文 → 松开鼠标 �
 
 ### 安装与使用
 
-1. 打开本仓库的 **[Releases](../../releases)**（仓库创建后可用），下载官方构建并安装。  
+1. 打开本仓库的 **[Releases](../../releases)**，下载官方构建并安装。  
+   0.3.18 的官方构建是签名并公证后的 `点译-eDrop-0.3.18.dmg`（证书就绪后由著作权人上传）。安装说明见 [`docs/RELEASE-NOTES-0.3.18.md`](docs/RELEASE-NOTES-0.3.18.md)。  
 2. 或从源码本地构建（仅供个人在本机编译运行，**不授予**拷贝/再分发权）：
    ```bash
    open eDrop.xcodeproj
@@ -70,7 +71,8 @@ Attribution must remain: **王振茹 (Zhenru Wang)**.
 
 ### Install & use
 
-1. Open **[Releases](../../releases)** (once the repo exists), download an official build, and install.  
+1. Open **[Releases](../../releases)**, download an official build, and install.  
+   The 0.3.18 official build is the signed and notarized `点译-eDrop-0.3.18.dmg` (uploaded by the copyright holder after certificates are installed). See [`docs/RELEASE-NOTES-0.3.18.md`](docs/RELEASE-NOTES-0.3.18.md).  
 2. Or build locally for personal use on your Mac only (this does **not** grant copy/redistribution rights):
    ```bash
    open eDrop.xcodeproj
@@ -93,12 +95,12 @@ Optional: toggle “选中即译” (auto-translate on selection) from the menu 
 ## Development notes (brief)
 
 - Open `eDrop.xcodeproj` (product name **eDrop**; display name **点译**).
-- Default Debug/Release signing is Ad-hoc (`CODE_SIGN_IDENTITY = "-"`) for local runs; use your Apple Team before notarized distribution.
+- Default Debug/Release signing stays Ad-hoc (`CODE_SIGN_IDENTITY = "-"`, empty `DEVELOPMENT_TEAM`) for local runs. Developer ID signing, notarization, and the `.dmg` are done by [`scripts/build-signed-dmg.sh`](scripts/build-signed-dmg.sh) when `TEAM_ID` and a Developer ID Application identity are available. See [`scripts/README-RELEASE.md`](scripts/README-RELEASE.md).
 - Bundle ID remains `app.eyedrop.translate` (unchanged).
 - Optional remote API: environment keys `EYEDROP_TRANSLATE_API_BASE_URL` / `EYEDROP_TRANSLATE_API_KEY` (not required for the default free fallback chain).
 
 ## Version
 
-Current tree: **0.3.17**. See in-app Settings → About for version and copyright.
+Xcode marketing version: **0.3.18** (build 27). This is a packaging release of the 0.3.17 app for the first Developer ID disk image. See in-app Settings → About for copyright. Release notes: [`docs/RELEASE-NOTES-0.3.18.md`](docs/RELEASE-NOTES-0.3.18.md).
 
 Commercial or other licensing: contact the copyright holder **王振茹 (Zhenru Wang)** via this repository’s Issues (once published).
