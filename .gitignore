@@ -49,3 +49,6 @@ Package.resolved
 *.p12
 *.mobileprovision
 secrets/
+
+# Developer ID distribution output (app, archive, dmg, notarization logs)
+dist/
